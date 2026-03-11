@@ -1,0 +1,353 @@
+/* Basic reset/global styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-top: 81px; /* To push content below fixed header */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+  overflow-x: hidden; /* Prevent horizontal scroll on the section itself */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%; /* Ensure it takes full width of its container up to max-width */
+  box-sizing: border-box; /* Include padding in width */
+  overflow: hidden; /* Hide any internal overflow for good measure */
+}
+
+.hero-logo-small {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 80%; /* Ensure it scales down on very small screens */
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  word-break: break-word; /* Allow long words to break */
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.hero-subtitle .icon-calendar,
+.hero-subtitle .icon-location {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.hero-tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-break: break-word; /* Allow long words to break */
+}
+
+.hero-description {
+  font-size: 16px;
+  color: #eee;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow boxes to wrap if necessary */
+}
+
+.timer-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.timer-box span:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.timer-box span:last-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ccc;
+  letter-spacing: 0.5px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Ensure text is centered within the button */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.btn-primary {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.btn-primary span {
+  margin-left: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #cc2e2e;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-tertiary {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.btn-tertiary:hover {
+  background-color: #e0b800;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.stat-item {
+  min-width: 150px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Responsive Adjustments for Hero Section --- */
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-tagline {
+    font-size: 20px;
+  }
+  .timer-box {
+    padding: 12px 20px;
+    min-width: 70px;
+  }
+  .timer-box span:first-child {
+    font-size: 30px;
+  }
+  .timer-box span:last-child {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .stat-item h3 {
+    font-size: 30px;
+  }
+  .stat-item p {
+    font-size: 13px;
+  }
+  .hero-actions, .hero-stats {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 700px;
+    padding-top: 60px; /* Adjust for mobile header height */
+  }
+  .hero-content {
+    padding: 10px; /* Reduced padding on very small screens */
+  }
+  .hero-title {
+    font-size: 32px; /* Further reduced font size for iPhone SE */
+    margin-bottom: 8px;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .hero-tagline {
+    font-size: 16px; /* Further reduced font size */
+    margin-bottom: 10px;
+  }
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .countdown-timer {
+    gap: 8px; /* Tighter gap for countdown boxes */
+    margin-bottom: 30px;
+  }
+  .timer-box {
+    padding: 8px 10px; /* Smaller padding for timer boxes */
+    min-width: 50px; /* Even smaller min-width */
+  }
+  .timer-box span:first-child {
+    font-size: 20px; /* Even smaller font size */
+  }
+  .timer-box span:last-child {
+    font-size: 9px; /* Even smaller font size */
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    width: calc(100% - 20px); /* Make buttons fill available width, accounting for padding */
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for stats */
+    margin-top: 30px;
+  }
+  .stat-item {
+    min-width: unset;
+    width: calc(100% - 20px); /* Fill width, accounting for padding */
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 0;
+    border-radius: 8px;
+  }
+  .stat-item h3 {
+    font-size: 26px;
+  }
+  .stat-item p {
+    font-size: 11px;
+  }
+}
+
+/* New media query for even smaller screens (like older iPhone SE at 320px width) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-tagline {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .hero-subtitle {
+    font-size: 14px;
+  }
+  .hero-description {
+    font-size: 13px;
+  }
+  .timer-box span:first-child {
+    font-size: 18px;
+  }
+  .timer-box span:last-child {
+    font-size: 8px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .stat-item h3 {
+    font-size: 24px;
+  }
+  .stat-item p {
+    font-size: 10px;
+  }
+}
+
+

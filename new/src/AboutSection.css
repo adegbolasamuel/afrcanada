@@ -1,0 +1,356 @@
+.about-section {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.key-highlights-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== TOP TEXT ===== */
+
+.inaugural-edition {
+  text-align: center;
+  color: #e2473c;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-tagline {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+/* ============================= */
+/* GRID SECTION */
+/* ============================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-item {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* ============================= */
+/* REMOVE CONTAINER ONLY FROM WHAT TO EXPECT */
+/* ============================= */
+
+.what-to-expect {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ===== THEME ===== */
+
+/* THE ONLY CHANGE: FIXED HEIGHT APPLIED HERE */
+.theme-section {
+  height: 178px;
+  overflow: hidden;
+}
+
+.theme-section .item-heading {
+  color: #e2473c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.item-bold-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.item-sub-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* EXPECTED OUTCOMES */
+/* ============================= */
+
+.expected-outcomes-dark {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.expected-outcomes-dark .item-heading {
+  color: #fb923c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.expected-outcomes-dark ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expected-outcomes-dark li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+/* ============================= */
+/* WHAT TO EXPECT + HIGHLIGHTS */
+/* ============================= */
+
+.what-to-expect ul,
+.key-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.what-to-expect li,
+.key-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.key-highlights {
+  border: 1px solid #f1f1f1;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.key-highlights-actions-wrapper {
+  margin-top: 25px;
+}
+
+.key-highlights-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #e2473c;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #c7352c;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  width: 300px;
+  height: 40px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-secondary:hover {
+  background: #f3f4f6;
+}
+
+/* ============================= */
+/* EARLY BIRD NOTICE */
+/* ============================= */
+
+.about-discount-notice {
+  background: #fbbd23;
+  border: 1px solid #fbbd23;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #b45309;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%; 
+}
+
+/* ============================= */
+/* WHY CHOOSE US */
+/* ============================= */
+
+.why-choose-us {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.section-subheading {
+  color: #e2473c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-main-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.card-icon {
+  margin-bottom: 15px;
+
+
+}
+
+.feature-card h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ============================= */
+/* STATS SECTION */
+/* ============================= */
+
+.stats-section {
+  margin-top: 50px;
+}
+
+.stats-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e2473c;
+  margin-bottom: 25px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  background-color: #f3f5f7;
+  border: 1px solid #f3f5f7;
+  height: 228px;
+  text-align: center;
+  padding-top: 64px;
+  padding-right: 48px;
+  padding-bottom: 38px;
+  padding-left: 48px;
+  gap: 32px;
+
+ 
+}
+
+.stat-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: red;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #6b7280;
+
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .key-highlights-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,214 @@
+/* Basic reset/global styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Container */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #E1E7EF;
+  position: fixed;
+  width: 100%; /* Ensure header itself spans full width */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 20px; /* Base padding for the header container */
+  box-sizing: border-box;
+  min-width: 320px; /* Prevents header from getting too small */
+}
+
+.header-inner {
+  max-width: 1440px; /* Limits the content width */
+  margin: 0 auto; /* Centers the content within the header */
+  height: 81px;
+  display: flex;
+  align-items: center;
+  /* FIX START: Center the entire group of items on desktop */
+  justify-content: center;
+  /* Removed direct gap, we'll use margins for precise control on desktop */
+  /* FIX END */
+}
+
+.logo {
+  flex-shrink: 0; /* Prevents logo from shrinking */
+  /* FIX START: Margin on logo to create space on desktop */
+  margin-right: 60px; /* Adjust this value to match the gap in Figma */
+  /* FIX END */
+}
+.logo img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+/* Wrapper for navigation and CTA button */
+.nav-and-cta-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Gap between the nav and the cta-btn */
+  /* FIX START: Margin on wrapper to create space on desktop */
+  margin-left: 0; /* No margin-left: auto here, as header-inner is centering */
+  /* FIX END */
+}
+
+/* Navigation Links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* Spacing between individual nav items */
+  overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-grow: 0; /* Prevents nav from over-expanding */
+  flex-shrink: 0;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Keeps links on a single line */
+  flex-shrink: 0; /* Prevents links from shrinking */
+}
+
+.nav a:hover {
+  background: #f0f0f0;
+}
+
+/* Active Nav Link */
+.nav a.active {
+  background: #e53935;
+  color: #E1E7EF;
+  display: flex;
+  align-items: center;
+}
+
+/* Call To Action Button */
+.cta-btn {
+  background: #e53935;
+  color: #E1E7EF;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap; /* Keeps button text on single line */
+  flex-shrink: 0; /* Prevents button from shrinking */
+}
+
+.cta-btn:hover {
+  background: #cc2e2e;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* For screens smaller than desktop, but still wide enough */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .header-inner {
+    height: 70px;
+  }
+
+  .logo {
+    margin-right: 40px; /* Reduced gap for smaller desktops */
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav-and-cta-wrapper {
+    gap: 10px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  .cta-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+    height: 34px;
+  }
+}
+
+/* For small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 15px; /* Reduced horizontal padding for small screens */
+  }
+
+  .header-inner {
+    height: 60px; /* Mobile header height */
+    /* FIX START: Space-between for mobile */
+    justify-content: space-between; /* Logo left, nav/button group right */
+    /* FIX END */
+  }
+
+  .logo {
+    margin-right: 0; /* Remove margin on mobile for logo */
+  }
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-and-cta-wrapper {
+    margin-left: 0; /* Remove specific margin on mobile */
+    gap: 8px; /* Even smaller gap between nav and cta-btn */
+    flex-grow: 1; /* Allow wrapper to take up available space */
+    overflow: hidden; /* Hide overflow within this wrapper */
+  }
+
+  .nav {
+    gap: 8px;
+    justify-content: flex-start; /* Ensure scrolling starts from left */
+    flex-grow: 1; /* Allow nav to take up available space before scrolling */
+    flex-shrink: 1; /* Allow nav to shrink if needed */
+    min-width: 0; /* Allow the flex item to shrink below its content size */
+  }
+
+  .nav a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .cta-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    height: 30px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+  }
+}
+
+

@@ -1,0 +1,298 @@
+.indigenous-partnership-section {
+  background-color: #242938; /* Dark blue/purple background from Figma */
+  padding: 96px 0; /* Top and bottom padding from Figma */
+  font-family: 'Inter', sans-serif;
+  color: #fff; /* Default white text for this section */
+}
+
+.section-content-wrapper {
+  max-width: 1216px; /* Max width (1440 - 112*2) */
+  margin: 0 auto;
+  padding: 0 112px; /* Left and right padding from Figma */
+  text-align: center; /* Centers main headings/subheadings */
+}
+
+/* --- Main Heading & Subtitle --- */
+.section-small-heading {
+  font-size: 14px;
+  color: #e53935; /* Red color from Figma */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section-main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.section-subtitle-text {
+  font-size: 18px;
+  color: #e0e0e0; /* Lighter white for subtitle */
+  margin-bottom: 60px; /* Space before the grid */
+  line-height: 1.5;
+}
+
+/* --- Two-Column Content Grid --- */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
+  gap: 60px; /* Gap between columns from Figma */
+  text-align: left; /* Align text within grid items to the left */
+  margin-bottom: 96px; /* Space before quote section */
+}
+
+.column-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.column-description {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* List Item Styling for Intentional Design and Programming Protocols */
+.intentional-design-column ul,
+.programming-protocols-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intentional-design-column ul li {
+  display: flex;
+  align-items: flex-start; /* Align number/heading at top */
+  margin-bottom: 25px; /* Space between list items */
+}
+.intentional-design-column ul li:last-child {
+  margin-bottom: 0;
+}
+
+.intentional-design-column ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
+.intentional-design-column ul li p {
+  font-size: 15px;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Numbered Circle Icon Styling */
+.numbered-circle-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #e53935; /* Red background for number circle */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevent from shrinking */
+  margin-right: 15px;
+  margin-top: 2px; /* Adjust vertical alignment with heading */
+}
+
+/* Programming Protocols List Item Styling */
+.programming-protocols-column ul li {
+  margin-bottom: 30px; /* Space between list items */
+}
+.programming-protocols-column ul li:last-child {
+  margin-bottom: 0;
+}
+
+.programming-protocols-column ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
+.programming-protocols-column ul li p {
+  font-size: 15px;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- Quote Section --- */
+.quote-section {
+  max-width: 900px; /* Max width for the quote text */
+  margin: 0 auto 96px auto; /* Centered with space below */
+}
+
+.quote-text {
+  font-size: 20px;
+  font-weight: 500; /* Medium weight */
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin: 0;
+  font-style: italic; /* From Figma */
+}
+
+/* --- Join Us in Partnership Section --- */
+.join-partnership-section {
+  text-align: center;
+}
+
+.join-partnership-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.join-partnership-description {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.partnership-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Gap between buttons */
+}
+
+.partnership-btn {
+  background-color: #33394c; /* Darker blue/grey background for buttons */
+  color: #e0e0e0;
+  border: 1px solid #454d66; /* Border color from Figma */
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Keep button text on one line */
+}
+
+.partnership-btn:hover {
+  background-color: #454d66;
+  border-color: #e53935; /* Red border on hover */
+  color: #fff;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 1200px) {
+  .section-content-wrapper {
+    padding: 0 60px;
+  }
+  .section-main-heading {
+    font-size: 38px;
+  }
+  .content-grid {
+    gap: 40px;
+  }
+  .column-title {
+    font-size: 22px;
+  }
+  .intentional-design-column ul li h4,
+  .programming-protocols-column ul li h4 {
+    font-size: 16px;
+  }
+  .intentional-design-column ul li p,
+  .programming-protocols-column ul li p {
+    font-size: 14px;
+  }
+  .quote-text {
+    font-size: 18px;
+  }
+  .join-partnership-title {
+    font-size: 22px;
+  }
+  .join-partnership-description {
+    font-size: 15px;
+  }
+  .partnership-btn {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-content-wrapper {
+    padding: 0 40px;
+  }
+  .section-main-heading {
+    font-size: 32px;
+  }
+  .section-subtitle-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .content-grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  .quote-section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-content-wrapper {
+    padding: 0 20px;
+  }
+  .section-main-heading {
+    font-size: 26px;
+  }
+  .section-subtitle-text {
+    font-size: 14px;
+  }
+  .column-title {
+    font-size: 20px;
+  }
+  .column-description {
+    font-size: 14px;
+  }
+  .intentional-design-column ul li h4,
+  .programming-protocols-column ul li h4 {
+    font-size: 15px;
+  }
+  .intentional-design-column ul li p,
+  .programming-protocols-column ul li p {
+    font-size: 13px;
+  }
+  .numbered-circle-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .quote-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .join-partnership-title {
+    font-size: 20px;
+  }
+  .join-partnership-description {
+    font-size: 14px;
+  }
+  .partnership-buttons {
+    gap: 8px;
+  }
+  .partnership-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,269 @@
+.footer-section {
+  background-color: #0F1729; /* Dark blue background from Figma */
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding-top: 96px; /* Top padding from Figma */
+  box-sizing: border-box; /* Global box-sizing for consistency */
+}
+
+.footer-top-wrapper {
+  max-width: 1216px; /* Content width as per Figma (1440 - 2*112) */
+  margin: 0 auto; /* Center the wrapper */
+  padding: 0 0 96px 0; /* No horizontal padding here, content columns handle it */
+  display: grid;
+  /* FIX: Explicitly define column widths based on Figma measurements */
+  /* Approx. widths from Figma: Intro(344px) + Quick(205px) + Exhib(205px) + Visitor(205px) = 959px */
+  /* Total content width: 1216px. Remaining space: 1216 - 959 = 257px to distribute as gaps */
+  /* Let's use a combination of minmax and auto to ensure proper spreading */
+  grid-template-columns: minmax(344px, 1fr) minmax(205px, 0.7fr) minmax(205px, 0.7fr) minmax(205px, 0.7fr);
+  gap: 80px; /* Adjusted gap to push columns further apart, roughly 80px based on 1216px total */
+  border-bottom: 1px solid #2D3748; /* Divider line from Figma */
+  text-align: left; /* Default text alignment */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Common padding for direct children of footer-top-wrapper to mimic 112px */
+.footer-intro-column,
+.footer-nav-column {
+  padding: 0; /* Resetting padding for these grid items, wrapper handles it */
+}
+
+.footer-logo {
+  width: 56px; /* Logo size from Figma */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-intro-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  max-width: 344px; /* Constrain text width as per Figma column */
+}
+
+.footer-stay-connected-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-stay-connected-description {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  gap: 10px; /* Gap between input and button */
+  margin-bottom: 20px;
+}
+
+.footer-email-input {
+  flex-grow: 1;
+  background-color: #2D3748; /* Dark background */
+  border: 1px solid #4a5568; /* Border color */
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 8px; /* Rounded corners */
+  outline: none;
+}
+.footer-email-input::placeholder {
+  color: #999;
+}
+
+.footer-subscribe-button {
+  background-color: #e53935; /* Red button */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+.footer-subscribe-button:hover {
+  background-color: #cc2e2e;
+}
+
+
+
+.footer-column-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-nav-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-column ul li {
+  display: block; /* Ensures list items stack vertically */
+  margin-bottom: 10px;
+}
+.footer-nav-column ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav-column ul li a {
+  font-size: 15px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-nav-column ul li a:hover {
+  color: #e53935; /* Red on hover */
+}
+
+/* --- Footer Contact Info & Socials --- */
+.footer-contact-socials {
+  grid-column: 1 / -1; /* Spans all columns at the bottom of the top section */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  /* FIX START: Space between contact items and social links */
+  justify-content: space-between;
+  /* FIX END */
+  align-items: center;
+  margin-top: 60px; /* Space from nav columns above */
+  gap: 30px; /* Space between contact items, will be overridden by justify-content on wide screens */
+}
+
+/* FIX: Group contact items to simplify distribution with socials */
+.footer-contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  font-size: 20px; /* Icon size */
+  color: #e53935; /* Red icon color */
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.contact-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.contact-value:hover {
+  text-decoration: underline;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 15px; /* Space between social icons */
+}
+
+.social-icon {
+  width: 36px; /* Icon background size */
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2D3748; /* Dark background */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; /* Text inside icon */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.social-icon:hover {
+  background-color: #e53935; /* Red on hover */
+}
+
+/* --- Footer Bottom Wrapper --- */
+.footer-bottom-wrapper {
+  max-width: 1216px; /* Match the top wrapper's content width */
+  margin: 0 auto;
+  padding: 30px 0; /* Top/bottom padding from Figma, no horizontal padding here */
+  text-align: center;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Space above acknowledgement */
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal-links a {
+  font-size: 14px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-legal-links a:hover {
+  color: #e53935;
+}
+
+.footer-acknowledgement {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #99a3b7; /* Lighter grey for acknowledgement */
+  margin: 0;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 1200px) {
+  .footer-top-wrapper {
+    padding: 0 40px 70px 40px; /* Adjust padding for mid-size screens */
+    gap: 40px; /* Adjust gap */
+    grid-template-columns: minmax(300px, 1.2fr) repeat(3, 1fr);
+  }
+  .footer-bottom-wrapper {
+    padding: 25px 40px;
+  }
+}
+
+@media (max-width: 900px){
+  .footer-top-wrapper {
+    padding: 0 40px 60px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for nav and intro */
+    gap: 40px;
+  }
+  .footer-intro-column {
+    grid-column: span 2; /* Intro column spans both columns */
+  }
+  .footer-contact-socials {
+    grid-column: span 2; /* Contact/socials span both columns */
+    flex-direction: column; /* Stack contact items and socials */
+  }
+
+}

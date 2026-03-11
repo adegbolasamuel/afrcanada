@@ -1,0 +1,466 @@
+/* --- Global Button Styles (ensure these are available globally or imported) --- */
+.btn {
+  padding: 12px 25px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline for a tags used as buttons */
+}
+.attendee-card-exhibitor-theme{
+    background-color: red;
+    border: 1px solid #e2473c;
+    height: 130px;
+    border-radius: 20px 20px 0 0;
+
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+
+.panel-icon-box{
+  width: 64px;
+  height: 64px;
+  background-color: #f6dedd;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* Specific button for 'Learn More About Exhibiting' */
+.btn-red-outline {
+  background-color: transparent;
+  color: #e53935;
+  border: 1px solid #e53935;
+  padding: 10px 18px; /* Figma specific padding */
+  font-size: 14px; /* Figma specific font size */
+}
+
+.btn-red-outline{
+background-color: #cc2e2e;
+  color: #fff;
+}
+
+.btn-red-outline span {
+  margin-left: 8px;
+}
+
+/* Specific buttons for attendee cards */
+.btn-primary-card {
+  background-color: #e53935; /* Red background */
+  color: #fff;
+  border: none;
+  padding: 12px 20px; /* Figma specific padding */
+  font-size: 14px; /* Figma specific font size */
+  margin-top: auto; /* Push to bottom of flex container */
+  width: 100%; /* Make button full width of card */
+}
+.btn-primary-card:hover {
+  background-color: #cc2e2e;
+}
+.btn-primary-card span {
+  margin-left: 8px;
+}
+
+.btn-secondary-card {
+  background-color: #fff; /* White background */
+  color: #333;
+  border: 1px solid #d4d8de; /* Light grey border */
+  padding: 12px 20px; /* Figma specific padding */
+  font-size: 14px; /* Figma specific font size */
+  margin-top: auto; /* Push to bottom of flex container */
+  width: 100%; /* Make button full width of card */
+}
+.btn-secondary-card:hover {
+  background-color: #f0f0f0;
+}
+.btn-secondary-card span {
+  margin-left: 8px;
+}
+
+/* --- Expo Details Section Styling --- */
+.expo-details-section {
+  background-color: #f3f5f7; /* Light grey background from Figma */
+  padding:  0px; /* Top and bottom padding from Figma */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.section-content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+/* --- Shared Heading Styles --- */
+.small-heading {
+  font-size: 14px;
+  color: #e53935; /* Red color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.sub-heading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* Intro sections for business ecosystem and who should attend */
+.business-ecosystem-intro {
+  margin-bottom: 50px; /* Space between intro and tabs */
+}
+.who-should-attend-intro {
+  margin-top: 96px; /* Top padding for this section */
+  margin-bottom: 50px; /* Space between intro and cards */
+}
+
+/* --- Expo Component Tabs --- */
+.expo-components-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px; /* Gap between tab items from Figma */
+  margin-bottom: 50px;
+  
+}
+
+.tab-item {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 40;
+color: #65758b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.tab-item:hover {
+  border-color: #e53935;
+}
+
+.tab-item.active {
+  background-color: #e53935;
+  border: 1px solid red;
+height: 10px;
+border-radius: 40px;
+color: #fff;
+font-size: 10;
+
+}
+
+
+
+/* Tab Icons (emojis for now) */
+.tab-icon {
+  font-size: 18px;
+  /* Specific colors for tab icons if needed, e.g., if they were SVGs */
+}
+
+/* --- Exhibition Halls Content Panel --- */
+.exhibition-halls-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Gap between columns from Figma */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 50px; /* Padding inside the content box from Figma */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.panel-icon-box svg{
+  width: 28px;
+  height: 28px;
+}
+
+.panel-left .panel-heading-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.panel-left h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.panel-left .panel-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.panel-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panel-right ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.panel-right ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Green Checkmark Bullet Styling */
+.check-bullet-green {
+  font-size: 16px; /* Size of the checkmark */
+  color: #4CAF50; /* Green checkmark color from Figma */
+  flex-shrink: 0;
+  margin-right: 12px;
+  line-height: 1.5; /* Align with text */
+}
+
+/* --- Attendee Cards --- */
+.attendee-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px; /* Gap between cards from Figma */
+  text-align: left;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.attendee-card {
+  border-radius: 8px;
+  padding: 40px; /* Padding inside card from Figma */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column; /* For vertical stacking of content */
+}
+
+/* Exhibitor Card (Red Theme) */
+.exhibitor-theme {
+  background-color: #fcebeb; /* Light red background from Figma */
+}
+
+.exhibitor-theme .card-top-icon {
+  color: #e53935; /* Red icon color */
+}
+.exhibitor-theme h3 {
+  color: #e53935; /* Red heading color */
+}
+
+/* Visitor Card (Dark Blue Theme) */
+.visitor-theme {
+  background-color: #242938; /* Dark blue background from Figma */
+  color: #fff; /* White text for contrast */
+}
+.visitor-theme .card-top-icon {
+  color: #4CAF50; /* Green icon color (from Figma) */
+}
+.visitor-theme h3 {
+  color: #fff; /* White heading color */
+}
+.visitor-theme .card-subtext,
+.visitor-theme .card-list-title,
+.visitor-theme ul li {
+  color: #e0e0e0; /* Lighter white text */
+}
+.visitor-theme .check-bullet-green {
+  color: #69a74e; /* Green checkmark on dark background */
+}
+
+.attendee-card .card-top-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Gap between icon and heading */
+  margin-bottom: 10px;
+}
+
+.attendee-card .card-top-icon {
+  font-size: 28px; /* Icon size from Figma */
+}
+
+.attendee-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.attendee-card .card-subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.attendee-card .card-list-title {
+  font-size: 14px;
+  color: #e53935; /* Red color for list titles */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+}
+.visitor-theme .card-list-title {
+  color: #e0e0e0; /* Override to white for dark theme */
+}
+
+.attendee-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attendee-card ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.attendee-card ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 1200px) {
+  .section-content-wrapper {
+    padding: 0 60px; /* Reduced padding */
+  }
+  .exhibition-halls-panel {
+    gap: 308px; /* Reduced gap */
+    padding: 40px;
+  }
+  .attendee-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-content-wrapper {
+    padding: 0 40px;
+  }
+  .main-heading {
+    font-size: 36px;
+  }
+  .sub-heading {
+    font-size: 16px;
+  }
+  .exhibition-halls-panel {
+    grid-template-columns: 1fr; /* Stack content columns */
+    gap: 40px;
+  }
+  .attendee-cards-grid {
+    grid-template-columns: 1fr; /* Stack attendee cards */
+    gap: 20px;
+  }
+  .attendee-card h3 {
+    font-size: 24px;
+  }
+  .card-top-icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-content-wrapper {
+    padding: 0 20px; /* Mobile padding */
+  }
+  .main-heading {
+    font-size: 28px;
+  }
+  .sub-heading {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .expo-components-tabs {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  .tab-item {
+    font-size: 13px;
+    padding: 10px 15px;
+    gap: 6px;
+  }
+  .tab-icon {
+    font-size: 16px;
+  }
+  .exhibition-halls-panel {
+    padding: 30px 20px;
+    margin-bottom: 60px; /* Adjust spacing */
+  }
+  .panel-left h3 {
+    font-size: 20px;
+  }
+  .panel-left .panel-description {
+    font-size: 15px;
+  }
+  .btn-red-outline {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+  .panel-right ul li, .attendee-card ul li {
+    font-size: 15px;
+  }
+  .check-bullet-green {
+    font-size: 14px; /* Smaller checkmark */
+    margin-right: 10px;
+  }
+  .attendee-card {
+    padding: 25px;
+  }
+  .attendee-card .card-top-icon {
+    font-size: 22px;
+  }
+  .attendee-card h3 {
+    font-size: 22px;
+  }
+  .attendee-card .card-subtext {
+    font-size: 15px;
+  }
+  .card-list-title {
+    font-size: 13px;
+  }
+  .btn-primary-card, .btn-secondary-card {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+  .who-should-attend-intro {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}

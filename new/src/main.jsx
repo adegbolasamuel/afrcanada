@@ -1,7 +1,7 @@
-    import React from 'react';
-
-    export function Main(){
-        return(
-            <h1>Welcome to the Main Content!</h1>
-        )
-    }
+ import React from 'react';
+import ReactDOM from 'react-dom/client';
+ ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

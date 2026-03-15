@@ -1,0 +1,4 @@
+git rm -r --cached node_modules
+git rm --cached .DS_Store
+git rm --cached package-lock.json
+

@@ -1,9 +1,9 @@
-import { Header } from './Header'; 
+import  {Header} from './header'; 
 import HeroSection from './HeroSection'; 
 import AboutSection from './AboutSection';
 import ExpoDetailsSection from './ExpoDetailsSection';
 import IndigenousPartnershipSection from './IndigenousPartnershipSection';
-import './header.css'; 
+import './Header.css'; 
 import "./HeroSection.css"
 import "./AboutSection.css"
 import "./IndigenousPartnershipSection.css"
